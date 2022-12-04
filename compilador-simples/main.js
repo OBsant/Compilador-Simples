@@ -40,7 +40,7 @@ const analiseLexica = (str) =>
     .map((s) => s.trim())
     .filter((s) => s.length);
 
-compilador = (arvoreSintaxica) => {
+const compilador = (arvoreSintaxica) => {
   const opMap = { soma: "+", multiplicacao: "*", subtracao: "-", divisao: "/" };
   const compileNum = (arvoreSintaxica) => arvoreSintaxica.val;
   const compileOp = (arvoreSintaxica) =>
